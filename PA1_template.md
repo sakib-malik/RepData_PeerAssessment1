@@ -52,11 +52,6 @@ plot(steps ~ interval, type = "l", data = step_int, ylab = "Average steps taken"
 
 ![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
-#### max step interval
-```r
-step_int[which.max(step_int$steps),]$interval
-```
-
 ## Imputing missing values
 
 #### No of missing values
