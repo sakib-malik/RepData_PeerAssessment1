@@ -50,6 +50,19 @@ plot(steps ~ interval, type = "l", data = step_int, ylab = "Average steps taken"
 
 ![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
+
+
+## max steps interval
+
+```r
+step_int[which.max(step_int$steps),]$interval
+```
+
+```
+## [1] 835
+```
+
+
 ## Imputing missing values
 
 #### No of missing values
@@ -91,7 +104,7 @@ steps_day2 <- aggregate(formula = steps ~ day, FUN = sum, data = activityFull)
 hist(steps_day2$steps,xlab = "steps taken",ylab = "frequency", main = "Histogram for Steps_per_day with No NA's")
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-8-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-9-1.png)<!-- -->
 
 
 
@@ -130,4 +143,4 @@ g <- ggplot(new, aes(interval, steps))+ geom_line(col = "blue")+ facet_grid(week
 g
 ```
 
-![](PA1_template_files/figure-html/unnamed-chunk-10-1.png)<!-- -->
+![](PA1_template_files/figure-html/unnamed-chunk-11-1.png)<!-- -->
