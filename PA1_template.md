@@ -54,7 +54,7 @@ plot(steps ~ interval, type = "l", data = step_int, ylab = "Average steps taken"
 
 #### max step interval
 ```r
-steps_int[which.max(steps_int$steps),]$interval
+step_int[which.max(step_int$steps),]$interval
 ```
 
 ## Imputing missing values
