@@ -42,6 +42,14 @@ step_int <- aggregate(formula = steps ~ interval,FUN = mean,data = activity)
 plot(steps ~ interval, type = "l", data = step_int, ylab = "Average steps taken", main = "Avg steps taken in each interval across all days")
 ```
 
+
+
+#### max steps interval
+```{r echo = T}
+step_int[which.max(step_int$steps),]$interval
+```
+
+
 ## Imputing missing values
 
 #### No of missing values
