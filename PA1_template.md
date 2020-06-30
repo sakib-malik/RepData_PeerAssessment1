@@ -48,6 +48,8 @@ step_int <- aggregate(formula = steps ~ interval,FUN = mean,data = activity)
 plot(steps ~ interval, type = "l", data = step_int, ylab = "Average steps taken", main = "Avg steps taken in each interval across all days")
 ```
 
+
+
 ![](PA1_template_files/figure-html/unnamed-chunk-4-1.png)<!-- -->
 
 
